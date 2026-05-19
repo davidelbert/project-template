@@ -1,0 +1,45 @@
+# --- Data (NEVER commit) -----------------------------------------------------
+data/
+!data/.gitkeep
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# --- Python ------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Virtual envs ------------------------------------------------------------
+.venv/
+venv/
+env/
+
+# --- Jupyter -----------------------------------------------------------------
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# --- pytest / coverage / mypy / ruff -----------------------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# --- macOS -------------------------------------------------------------------
+.DS_Store
+
+# --- Editors -----------------------------------------------------------------
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# --- Misc --------------------------------------------------------------------
+*.log
+.env

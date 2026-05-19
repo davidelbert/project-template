@@ -1,0 +1,55 @@
+# Replace "myproject" with your project's package name.
+# - Convention: lowercase, underscores (Python identifier rules).
+# - Match this to the directory under src/, e.g. src/myproject/.
+# - Three places must agree: [project].name, the src/<name>/ directory,
+#   and [tool.hatch.build.targets.wheel].packages below.
+
+[project]
+name = "myproject"
+version = "0.1.0"
+description = "One-line description of what this project does."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "seaborn",
+    "jupyter",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+    "nbstripout",
+]
+# Tools for pulling raw data from OSF (osf.io), where UVM Open Science
+# projects are deposited. Install with: uv pip install -e ".[data]"
+data = [
+    "osfclient",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# --- Tool configs -----------------------------------------------------------
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/myproject"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+# A small, opinionated starter rule set. Expand once you're comfortable.
+# E = pycodestyle errors, F = pyflakes, I = isort (import ordering),
+# UP = pyupgrade (modern Python idioms), B = flake8-bugbear (likely-bug catches).
+select = ["E", "F", "I", "UP", "B"]
+ignore = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
