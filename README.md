@@ -6,14 +6,15 @@
 
 Write one paragraph here to say: what this project is and what question it answers. Write it for someone who has never seen the project before. This repo is going to be the first deliverable you bring to the pod team meeting and then it can get filled out as you understand the project and develop things.
 
-## Quickstart
+## Quickstart 
+This is for plain Jupyter Notebook. You can also start Jupyter Lab by replacing the word Notebook with Lab in the command below if you prefer.
 
 ```bash
 git clone git@github.com:OWNER/REPO.git
 cd REPO
 uv venv
 uv pip install -e ".[dev]"
-uv run jupyter lab
+uv run jupyter notebook
 ```
 
 Then open `notebooks/01-explore.ipynb` and run all cells.
