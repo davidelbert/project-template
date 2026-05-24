@@ -10,7 +10,7 @@ Write one paragraph here to say: what this project is and what question it answe
 This is for plain Jupyter Notebook. You can also start Jupyter Lab by replacing the word Notebook with Lab in the command below if you prefer.
 
 ```bash
-git clone git@github.com:OWNER/REPO.git
+git clone git@github.com:OWNER/REPO.git # don't repeat this line if you have already cloned this template to make the repo you are working on. 
 cd REPO
 uv venv
 uv pip install -e ".[dev]"
