@@ -7,7 +7,7 @@
 [project]
 name = "myproject"
 version = "0.1.0"
-description = "One-line description of what this project does."
+description = "A teaching repo for learning team collaboration using version controlled notebooks."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -24,7 +24,7 @@ dev = [
     "ruff",
     "nbstripout",
 ]
-# Tools for pulling raw data from OSF (osf.io), where UVM Open Science
+# The following are tools for pulling raw data from OSF (osf.io). These might be useful for actual summer VERSO projects because UVM Open Science research is often kept on osf.io
 # projects are deposited. Install with: uv pip install -e ".[data]"
 data = [
     "osfclient",
