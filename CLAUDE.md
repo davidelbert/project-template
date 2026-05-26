@@ -3,6 +3,7 @@
 Behavioral guidelines to reduce common LLM coding mistakes. Merge with project-specific instructions as needed.
 
 **Tradeoff:** These guidelines bias toward caution over speed. For trivial tasks, use judgment.
+Many of these come from the Andrej Karpathy skills suggestions and found in the repo at: https://github.com/multica-ai/andrej-karpathy-skills/tree/main
 
 ## 1. Think Before Coding
 
